@@ -1,0 +1,349 @@
+@font-face {
+    font-family: Roboto;
+    src: url(Roboto-Black.ttf);
+}
+
+body{
+    border: 0px;
+    padding: 0px;
+}
+
+.container{
+
+    margin-top: 0px;
+    display: grid;
+    height: 99vh;
+    width: 99vw;
+    grid-template-columns: 1fr 4fr;
+
+    grid-template-rows: 70px 100px 1fr;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    font-family: Roboto;
+    
+}
+
+.dashboard{
+    /* border: 1px solid black; */
+    grid-column: 1/2;
+    background-color: dodgerblue;
+    color: white;
+    height: 1330px;
+    /* height: inherit; */
+    display: grid;
+    grid-template-columns: 1fr;
+    /* border: 1px solid black; */
+    align-items: start;
+    gap: 20px 0px;
+
+}
+
+.dashboard ul{
+    place-self: start;
+    
+}
+
+ul>li{
+    /* border: 1px solid black; */
+    list-style: none;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+}
+
+ul>li>span{
+    /* border: 1px solid black; */
+    /* align-self: center; */
+    text-align: left;
+}
+
+.icons{
+    /* border: 1px solid black; */
+    width: 30px;
+    height: 60px;
+    filter: invert(99%) sepia(1%) saturate(2712%) hue-rotate(237deg) brightness(110%) contrast(100%);
+}
+
+.dashboardLogo{
+    overflow: visible;
+    box-sizing: border-box;
+}
+
+.dashboardLogo img{
+    width: 55px;  
+}
+
+.nav-bar1{
+    background-color: whitesmoke;
+    /* border: 1px solid black; */
+    grid-column: 2 /3;
+    grid-row: 1/2;  
+    
+    height: 100px;
+    
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+
+    padding-left: 100px;
+    padding-right: 100px;
+
+    box-sizing: border-box;
+
+    background-color: #ffffff;
+
+}
+
+form{
+    /* border: 1px solid black; */
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+
+}
+.nav-bar1>.profile-container>.icons, button>.icons{
+    /* border: 1px solid black; */
+    filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(264deg) brightness(106%) contrast(101%);
+}
+
+.nav-bar1>span{
+    /* border: 1px solid black; */
+    width: max-content;
+    margin-right: 2px;
+
+}
+
+.nav-bar1 button{
+    width:min-content;
+    background-color: #ffffff;
+    border: none;
+}
+
+.profile-icons{
+    /* border: 1px solid black; */
+    justify-items: end;
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+}
+
+.profile-container{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: end;
+    align-items: center;
+    gap: 30px;
+}
+
+input{
+    border-radius: 10px;
+    border: none;
+    outline: 0;
+    width: 700px;
+    height: 30px;
+    background-color: lightgray;
+}
+
+.nav-bar2{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    padding-left: 75px;
+    padding-right: 100px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 100px 300px 1fr ;
+    align-items: center;
+}
+
+.nav-bar2 > img{
+
+    height: 90px;
+    width: 90px;
+}
+.user-greeting{
+    display: grid;
+}
+
+.user-greeting span:nth-child(1){
+    font-size: 1rem;
+}
+.nav-buttons{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: end;
+    gap: 20px;
+}
+
+.nav-buttons button{
+    color: white;
+    background-color: dodgerblue;
+    border-radius: 30px;
+    width: 120px;
+    height: 50px;
+    border: none;
+
+    font-size: 1rem;
+    font-weight: bolder;
+}
+
+.mainbody{
+    /* border: 1px solid black; */
+    grid-row-start: 3;
+    grid-column-start: 2;
+    background-color: lightgray;
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-left: 30px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 550px 550px;
+    gap: 15px 15px;
+}
+
+.projects{
+    grid-column: 1/2;
+
+}
+
+.card-container{
+    /* border: 1px solid black; */
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: grid;
+    /* grid-template-rows: (2, 1fr); */
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px 20px;
+}
+
+.cards{
+    padding: 20px;
+    border-radius: 10px;
+    height: 275 px;
+    background-color: white;
+    box-sizing: border-box;
+    border-left: 10px solid orange;
+}
+.project-content{
+    font-size: 1rem;
+}
+
+.announcements{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    /* border: 1px solid black; */
+    height: 525px;
+    padding-right: 20px;
+}
+
+.trending{
+    /* border: 1px solid black; */
+    grid-column: 2/3;
+    grid-row-end : span 1;
+    height: 400px;
+    display: grid;
+    gap : 2px 10px;
+    align-items: start;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    margin-right: 20px;
+}
+
+.cards{
+    /* border: 1px solid black; */
+}
+
+.icons-container>.icons{
+    filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(264deg) brightness(106%) contrast(101%);   
+    
+}
+
+.icons-container{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr  repeat(3, 40px);
+    justify-items: end;
+}
+
+.cards>.project-content{
+    color:grey;
+}
+
+.project-content{
+    padding-right: 60px;
+    font-weight: 0;
+}
+
+.announcement-container{
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 30px;
+    background-color: white;
+
+}
+
+
+.announcement-content{
+    font-size: 0.8rem;
+    color: grey;
+    font-weight: 0;
+}
+
+.announcement-title{
+    font-size: 1rem;
+}
+
+.announcements > span{
+    padding-left: 20px;
+
+}
+
+.eachProfile{
+    /* border: 1px solid black; */
+    display: grid;
+    grid-auto-flow: column;
+    height: 70px;
+    justify-content: start;
+    justify-items: start;
+    align-items: start;
+
+    display: grid;
+    grid-template-columns: 50px 100px 1fr;
+    grid-template-rows: 35px 35px;
+    gap: 5px 15px;
+    
+
+
+}
+
+.trending{
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 30px;
+    padding-bottom: 0;
+}
+
+.eachProfile>span, .eachProfile>p{
+    /* border: 1px solid black;  */
+    grid-column: 2/3;
+    justify-self: start;
+    font-size: 1.2rem;
+    align-self: end;
+    gap: 10px;
+    margin-left: 10px;
+    }
+
+.eachProfile>p{
+    width: 150px;
+    grid-row: 2/3;
+    /* border: 1px solid black; */
+    font-size: 0.8rem;
+    font-weight: 0;
+    color: grey;
+}
